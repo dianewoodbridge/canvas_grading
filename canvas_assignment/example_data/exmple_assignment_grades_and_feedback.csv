@@ -1,0 +1,28 @@
+Student,ID,SIS User ID,SIS Login ID,Total,Q1,"director file name 
+- 0.25","director data type 
+-0.25","director nullable 
+- 0.5","movies file name 
+- 0.25","movies data type 
+-0.25","movies nullable 
+- 0.5",,Q2,"distinct
+ -0.25","order by - field 
+- 0.25","order by direction
+ -0.5",,Q3,"right_outer join
+-0.5","join key 
+-0.25","select
+-0.25","groupBy. -name 
+-0.25","count
+-0.25","alias
+-0.25","orderBy
+-0.25","two fields
+-0.25","direction
+-0.25",Q4,"select
+-0.1","lag
+-0.5","lag-field
+-0.25","over.partitionBy
+-0.25","endyear
+-0.25","orderBy
+-0.25","start_year
+-0.25","alias
+-0.15",Comments
+"last,first",123456,654321,flast,5.6,,,,,-1,,,,,,,,,,,,,,,,,,,,,-1.9,,,,,,,

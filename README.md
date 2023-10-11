@@ -1,6 +1,16 @@
 # canvas_grading
 Code for uploading assignment/quiz grades to Canvas for authorized instructors
 
+## assignment_grading
+This requires a file which is a csv file including ID, Total and comments.
+- Required Environment Variables
+    * ACCESS_TOKEN : You can create by following https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89
+- Make sure to update user_definition.py to define course_id and assignment_id.
+    * course_id and assignment_id is given in the Canvas assignment URL
+    * EX. For https://usfca.instructure.com/courses/12345/assignments/67890, course id is 12345 and assignment id is 67890
+
+
+
 ## practicum_grading
 This requires deadline_file, and contact_file to be defined in user_definition.py.
 - deadline_file : a csv file including assignment_id and due_date. assignment_id is given in the Canvas assignment URL
