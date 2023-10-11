@@ -12,3 +12,6 @@ This requires deadline_file, and contact_file to be defined in user_definition.p
     * ACCESS_TOKEN : You can create by following https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89
     * COURSE_ID : course_id in your canvas url.
     * SMTPUSER and SMTPPASS : Using @usfca.edu email SMTP, sending out reports to students and mentors. You can read https://support.google.com/a/answer/176600 to configure your GSuite settings.
+
+- In order to automate the code, I'd encourage you to set something like Apache Airflow or Crontab.
+    Ex. 0 8 * * 1 source /home/dwoodbridge/.bash_profile; /usr/bin/python3 /home/dwoodbridge/practicum_weekly_report/practicum_weekly_report.py > /home/dwoodbridge/practicum_weekly_report/notes 2>&1
