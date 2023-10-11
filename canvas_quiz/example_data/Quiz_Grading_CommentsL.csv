@@ -1,0 +1,23 @@
+Name,ID,SIS_ID,47493561,"SELECT
+0.3","FROM
+0.2","LEFT JOIN
+1","ON
+1","ORDER BY
+0.5","Formatting & 
+Others ",47493560,"SELECT
+0.9","FROM (outer) and AS 
+0.75","GROUP BY
+0.75","HAVING
+1","ORDER BY
+0.5","SELECT with CASE
+1","INNER FROM
+0.1","Formatting & 
+Others ",47493562,"SELECT
+0.25","FROM
+0.25","WHERE
+0.5","NOT IN
+1.5","INNER SELECT, FROM
+0.5","INNER WHERE
+0.5","Formatting & 
+Others "
+First Last,123456,654321,1.5,,,-1,,-0.5,,0,-5,,,,,,,,0,-4,,,,,,

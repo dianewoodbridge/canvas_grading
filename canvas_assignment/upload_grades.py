@@ -37,3 +37,7 @@ def main():
                   user_id,
                   grade,
                   comment)
+
+
+if __name__ == '__main__':
+    main()
