@@ -17,7 +17,7 @@ This requires deadline_file, and contact_file to be defined in user_definition.p
     * EX. For https://usfca.instructure.com/courses/12345/assignments/67890, course id is 12345 and assignment id is 67890
 
 - contact_file : a csv file including student name, id, sis user id, company name, faculty mentor name, faculty mentor email, company mentor names and emails. This will be used to send email to the student, faculty mentor and company mentors. 
-    * <b>Canvas People<b/> : On canvas, make sure to create a group for each company and assign the student (you can do this by uploading a csv file.). <b> Make sure that company name on the group and contact_file are the same and no space is added. </b>
+    * <b>Canvas People</b> : On canvas, make sure to create a group for each company and assign the student (you can do this by uploading a csv file.). <b> Make sure that company name on the group and contact_file are the same and no space is added. </b>
 
 - Required Environment Variables
     * ACCESS_TOKEN : You can create by following https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89
