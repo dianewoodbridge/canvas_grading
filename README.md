@@ -6,7 +6,8 @@ This requires deadline_file, and contact_file to be defined in user_definition.p
 - deadline_file : a csv file including assignment_id and due_date. assignment_id is given in the Canvas assignment URL
     * EX. For https://usfca.instructure.com/courses/12345/assignments/67890, course id is 12345 and assignment id is 67890
 
-- contact_file : a csv file including student name, id, sis user id, company name, faculty mentor name, faculty mentor email, company mentor names and emails. This will be used to send email to the student, faculty mentor and company mentors.
+- contact_file : a csv file including student name, id, sis user id, company name, faculty mentor name, faculty mentor email, company mentor names and emails. This will be used to send email to the student, faculty mentor and company mentors. 
+    * <br>Canvas People<br/> : On canvas, make sure to create a group for each company and assign the student (you can do this by uploading a csv file.). <br> Make sure that company name on the group and contact_file are the same and no space is added. </br>
 
 - Required Environment Variables
     * ACCESS_TOKEN : You can create by following https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89
@@ -14,4 +15,4 @@ This requires deadline_file, and contact_file to be defined in user_definition.p
     * SMTPUSER and SMTPPASS : Using @usfca.edu email SMTP, sending out reports to students and mentors. You can read https://support.google.com/a/answer/176600 to configure your GSuite settings.
 
 - In order to automate the code, I'd encourage you to set something like Apache Airflow or Crontab.
-    Ex. 0 8 * * 1 source /home/dwoodbridge/.bash_profile; /usr/bin/python3 /home/dwoodbridge/practicum_weekly_report/practicum_weekly_report.py > /home/dwoodbridge/practicum_weekly_report/notes 2>&1
+    * Ex. 0 8 * * 1 source /home/dwoodbridge/.bash_profile; /usr/bin/python3 /home/dwoodbridge/practicum_weekly_report/practicum_weekly_report.py > /home/dwoodbridge/practicum_weekly_report/notes 2>&1
