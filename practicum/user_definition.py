@@ -19,6 +19,6 @@ key_words = ['practicum name',
              'the objective for next week']
 
 access_token = os.getenv('ACCESS_TOKEN')
-course_id = os.getenv('COURSE_ID')
+course_id = # course id in string. Ex. '1614565'
 smtpuser = os.getenv('SMTPUSER')
 smtppass = os.getenv('SMTPPASS')

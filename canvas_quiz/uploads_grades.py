@@ -22,8 +22,7 @@ def add_grade(access_token,
                'Authorization': f'Bearer {access_token}'}
     body = '{"quiz_submissions": [{"attempt":1,"questions": ' + \
         questions_dict_value + '}]}'
-
-    return requests.put(url, headers=headers, data=body)
+    return print(requests.put(url, headers=headers, data=body))
 
 
 def create_submission_id_for_students(course_id,
@@ -70,7 +69,7 @@ def create_gradebook_with_submission_id(access_token,
                                                quiz_id,
                                                access_token)
     grade_book = pd.read_csv(file)
-    grade_book.rename({'ID': 'user_id'}, axis=1, inplace=True)
+    grade_book.rename({'id': 'user_id'}, axis=1, inplace=True)
     return pd.merge(pd_ids, grade_book, how='inner', on='user_id')
 
 
@@ -108,16 +107,16 @@ def main():
                 question_dict_value += ','
             question_dict_value += '\"' + str(q_id) + '\": {\"score\": \"' +\
                                    str(q_grade) + '\", \"comment\": \"' + \
-                str(q_grade_comments) + '\"'
+                                   str(q_grade_comments) + '\"}'
 
         question_dict_value += '}'
+        
         add_grade(access_token,
                   course_id,
                   quiz_id,
                   submission_id,
                   validation_token,
                   question_dict_value)
-
 
 if __name__ == '__main__':
     main()
