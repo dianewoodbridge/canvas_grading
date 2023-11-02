@@ -104,7 +104,7 @@ def retrieve_canvas_submission(access_token,
                 if check_graded(access_token,
                                 course_id,
                                 assignment_id,
-                                user_id) in not True:  # Not graded
+                                user_id) is not True:  # Not graded
                     print(grade)
                     print(comment)
                     add_grade(access_token,
@@ -228,7 +228,7 @@ def main():
     company_list = sorted(list(data['Company Name'].dropna().unique()))
 
     for company in company_list:
-        print("=========")
+        print(f"========={company}===========")
         company_info = data[data['Company Name'] == company]
         student_id_list, to_list = retrieve_contact_info(company_info)
         student_id = student_id_list[0]
@@ -236,7 +236,6 @@ def main():
         message = retrieve_assignment_from_yesterday(deadline_file, student_id)
 
         if message is not None:
-            print(company)
             create_email(company,
                          to_list,
                          message)
